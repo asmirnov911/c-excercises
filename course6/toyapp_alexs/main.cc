@@ -13,7 +13,7 @@ int main()
 	std::cout << "Hello" << std::endl;
 
 	Display::Window win("Hello", 10, 10, 800, 800);
-	Display::Surface surf(200, 200);
+	Display::Surface surf(800, 800);
 	Display::Surface3D surf3d(surf);
 	Display::Cube cube(Display::RED);
 
