@@ -4,11 +4,11 @@
 
 namespace Display
 {
-template<class T, std::size_t S>
+template<typename T, std::size_t S>
 struct Vector
 {
 public:
-	template<class... E>
+	template<typename... E>
 	Vector(E... data)
 		: mData {static_cast<T>(data)...}
 	{

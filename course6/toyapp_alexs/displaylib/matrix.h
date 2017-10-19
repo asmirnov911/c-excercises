@@ -4,13 +4,13 @@
 
 namespace Display {
 
-template<std::size_t A, std::size_t B, class T = double>
+template<std::size_t A, std::size_t B, typename T = double>
 class Matrix
 {
 public:
 	Matrix() {}
 
-	template<class... E>
+	template<typename... E>
 	Matrix(E... data): mMatrix {static_cast<T>(data)...} {}
 
 	std::array<T, B>& operator [](int i)
